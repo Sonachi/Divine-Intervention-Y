@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F02CD715-5008-4989-B7A4-35847219B251}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TestGame</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\ThomasTheGameEngine;..\ThomasTheGameEngine\dependencies\SDL\SDL2_mixer-2.0.0\include;..\ThomasTheGameEngine\dependencies\SDL\SDL2_image-2.0.0\include;..\ThomasTheGameEngine\dependencies\SDL\include;..\ThomasTheGameEngine\dependencies\OpenGL\include;..\ThomasTheGameEngine\dependencies\SDL\SDL2_ttf-2.0.12\include;..\ThomasTheGameEngine\dependencies\SDL\SDL2_net-2.0.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Debug;..\ThomasTheGameEngine\dependencies\SDL\SDL2_mixer-2.0.0\lib\x86;..\ThomasTheGameEngine\dependencies\SDL\SDL2_image-2.0.0\lib\x86;..\ThomasTheGameEngine\dependencies\SDL\lib\x86;..\ThomasTheGameEngine\dependencies\OpenGL\lib;..\ThomasTheGameEngine\dependencies\SDL\SDL2_ttf-2.0.12\lib\x86;..\ThomasTheGameEngine\dependencies\SDL\SDL2_net-2.0.0\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ThomasTheGameEngine.lib;SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;SDL2_net.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\Debug</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AmbientStar.h" />
+    <ClInclude Include="AsteroidField.h" />
+    <ClInclude Include="CounterButton.h" />
+    <ClInclude Include="DrScottLevel.h" />
+    <ClInclude Include="FPS_Controls.h" />
+    <ClInclude Include="GameCamera.h" />
+    <ClInclude Include="GameLevel.h" />
+    <ClInclude Include="Hallway.h" />
+    <ClInclude Include="HeadBob.h" />
+    <ClInclude Include="Layerr.h" />
+    <ClInclude Include="MockSolarSystem.h" />
+    <ClInclude Include="Observatory.h" />
+    <ClInclude Include="ObservatoryRoom.h" />
+    <ClInclude Include="PlanetHorizontal.h" />
+    <ClInclude Include="PlanetVertical.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SlidingDoor.h" />
+    <ClInclude Include="TestGame.h" />
+    <ClInclude Include="TestLevel.h" />
+    <ClInclude Include="TestNetLevel.h" />
+    <ClInclude Include="Torch.h" />
+    <ClInclude Include="UITestLevel.h" />
+    <ClInclude Include="WarpGate.h" />
+    <ClInclude Include="Wormhole.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AmbientStar.cpp" />
+    <ClCompile Include="AsteroidField.cpp" />
+    <ClCompile Include="CounterButton.cpp" />
+    <ClCompile Include="DrScottLevel.cpp" />
+    <ClCompile Include="FPS_Controls.cpp" />
+    <ClCompile Include="GameCamera.cpp" />
+    <ClCompile Include="GameLevel.cpp" />
+    <ClCompile Include="Hallway.cpp" />
+    <ClCompile Include="HeadBob.cpp" />
+    <ClCompile Include="Layer.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MockSolarSystem.cpp" />
+    <ClCompile Include="Observatory.cpp" />
+    <ClCompile Include="ObservatoryRoom.cpp" />
+    <ClCompile Include="PlanetHorizontal.cpp" />
+    <ClCompile Include="PlanetVertical.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="SlidingDoor.cpp" />
+    <ClCompile Include="TestGame.cpp" />
+    <ClCompile Include="TestLevel.cpp" />
+    <ClCompile Include="TestNetLevel.cpp" />
+    <ClCompile Include="Torch.cpp" />
+    <ClCompile Include="UITestLevel.cpp" />
+    <ClCompile Include="WarpGate.cpp" />
+    <ClCompile Include="Wormhole.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GameObjects.frag" />
+    <None Include="GameObjects.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TestGame.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ThomasTheGameEngine\ThomasTheGameEngine.vcxproj">
+      <Project>{fbb68591-c2e9-433d-afcb-d2fbad16c953}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

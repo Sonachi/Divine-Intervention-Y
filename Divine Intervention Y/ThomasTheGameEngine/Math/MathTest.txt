@@ -1,0 +1,50 @@
+List of untested math functions. If it's not on this list safe to use.
+
+	Matrix2 operator+=(const Matrix2&);
+	Matrix2 operator-=(const Matrix2&);
+	Matrix2 operator*=(const float&);
+	Matrix2 operator/=(const float&);
+	Matrix2 operator=(const Matrix2&);
+	Matrix2 operator*=(const Matrix2&);
+
+	//2D math checked on to 3D
+
+	3D Testbed:
+
+	Vec3 operator+=(const Vec3&);
+	void operator=(const Vec3&);
+	Vec3 operator-=(const Vec3&);
+	Vec3 operator*=(const float&);
+	Vec3 operator/=(const float&);
+
+	static Matrix3 Rotate(float, int); //Angle - Axis (0 = x, 1 = y, 2 = z) This rotate is only for rotation about a basis axis (x/y/z)
+
+	Matrix3 operator+=(const Matrix3&);
+	Matrix3 operator-=(const Matrix3&);
+	Matrix3 operator*=(const float&);
+	Matrix3 operator/=(const float&);
+	Matrix3 operator=(const Matrix3&);
+	Matrix3 operator*=(const Matrix3&);
+
+	//4d Testbed
+
+	//--------------------------------Actual Maths----------------------------------------------------\\
+
+	static float dot(Quat, Quat);
+
+	//VEC4
+
+	//--------------------------------Operator Overloading-------------------------------------------\\
+
+	Vec4 operator+=(const Vec4&);
+	Vec4 operator-=(const Vec4&);
+	Vec4 operator*=(const float&);
+	Vec4 operator/=(const float&);
+	void operator=(const Vec4&);
+
+	//--------------------------------Operator Overloading-------------------------------------------\\
+
+	Matrix4 operator+=(const Matrix4&);
+	Matrix4 operator-=(const Matrix4&);
+	Matrix4 operator*=(const Matrix4&);
+	Matrix4 operator*=(const float&);

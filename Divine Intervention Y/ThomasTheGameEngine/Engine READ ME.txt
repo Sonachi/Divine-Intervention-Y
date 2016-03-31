@@ -1,0 +1,17 @@
+
+
+Thomas the Game Engine was created by: Mathieu Violette, James Sholdice, and Nathan Senter,
+and is still a work in progress.
+
+All engine functionality is located in the ThomasTheGameEngine project and is organized
+into folders for easier navigation. The h files are all commented for the ease of understanding
+the project.
+
+The TestGame project contains code that tests out many of the features within Thomas the Game Engine.
+
+*****************************************************************************************************
+For the test project, WASD will move the camera, Space will move it up, while X will move it down.
+The N key will play a sound, and the M key will start and stop the music.
+
+The escape key, or clicking the windows X will end the program
+*****************************************************************************************************

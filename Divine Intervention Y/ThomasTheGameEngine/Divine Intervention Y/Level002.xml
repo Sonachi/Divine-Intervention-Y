@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Level numLayers="3" par="5" skybox="skybox1">
+
+  <Layer r = "120" s = "10" wormHoleX = "0" wormHoleZ = "-5" wormHoleDestX ="-7" wormHoleDestY ="0" planetX ="7" planetZ = "0" planetScale="12" planetTexture = "planet3">
+  </Layer>
+  
+  <Layer r = "240" s = "10" wormHoleX = "9" wormHoleZ = "0" wormHoleDestX ="-7" wormHoleDestY ="0" planetX ="0" planetZ = "0" planetScale="10" planetTexture = "planet1">
+    <Object type="Satellite" x="0" z="-10" ></Object>
+    <Object type="Satellite" x="0" z="10"></Object>
+  </Layer>
+
+  <Layer r = "330" s = "10" wormHoleX = "5" wormHoleZ = "-6" wormHoleDestX ="-9" wormHoleDestY ="0" planetX ="10" planetZ = "0" planetScale="8" planetTexture = "planet2" playerX="-5" playerZ ="0">
+    
+   <Object type="Aliens" x="2" z="-2"></Object>
+
+	<Object type="Asteroids" x="0" z="-10"></Object>
+  <Object type="Asteroids" x="0" z="-9"></Object>
+  <Object type="Asteroids" x="0" z="-8"></Object>
+  <Object type="Asteroids" x="0" z="-7"></Object>
+  <Object type="Asteroids" x="0" z="-6"></Object>
+  <Object type="Asteroids" x="0" z="-5"></Object>
+  <Object type="Asteroids" x="0" z="-4"></Object>
+  <Object type="Asteroids" x="0" z="-2"></Object>
+  <Object type="Asteroids" x="0" z="2"></Object>
+  <Object type="Asteroids" x="0" z="3"></Object>
+  <Object type="Asteroids" x="0" z="4"></Object>
+  <Object type="Asteroids" x="0" z="5"></Object>
+  <Object type="Asteroids" x="0" z="6"></Object>
+  <Object type="Asteroids" x="0" z="7"></Object>
+  <Object type="Asteroids" x="0" z="8"></Object>
+  <Object type="Asteroids" x="0" z="9"></Object>
+  <Object type="Asteroids" x="0" z="10"></Object>
+  </Layer>
+</Level>

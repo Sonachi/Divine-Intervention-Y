@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Level size="MEDIUM" par="3" skybox="skybox1">
+  
+  <Layer>
+    <Object type="PlanetVertical" x="0" z="-2" texture="planet1"></Object>
+  </Layer>
+
+  <Layer>
+    <Object type="WarpGate" x="0" z="0"></Object>
+  </Layer>
+
+  <Layer>
+    <Object type="PlanetHorizontal" x="0" z="-2" texture="planet1"></Object>
+  </Layer>
+  
+  <Layer>
+    
+  </Layer>
+
+  <Assets>
+    <Models></Models>
+    <Textures></Textures>
+    <Sounds></Sounds>
+    <Music></Music>
+  </Assets>
+</Level>

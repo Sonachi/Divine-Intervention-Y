@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AudioProperty>
+	<property id="master">1.0</property>
+	<property id="music">1.0</property>
+	<property id="sound">1.0</property>
+</AudioProperty>
+
+<VideoProperty>
+	<property id="aspect">1.777</property>
+	<property id="drawDistance">1000</property>
+	<property id="width">1280</property>
+	<property id="height">720</property>
+	<property id="fullscreen">0</property>
+</VideoProperty>
